@@ -14,7 +14,8 @@ export default function App({ Component, pageProps }) {
 		>
 			<ThemeProvider
 				defaultTheme="light"
-				attribute="class"
+        attribute="class"
+        disableTransitionOnChange
 			>
 				<div className="scroll-smooth">
 					<Navbar />
