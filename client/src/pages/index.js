@@ -38,21 +38,21 @@ export default function Home() {
 				<div className="flex flex-col space-x-0 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-2">
 					<Link
 						href="/syllabus"
-						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:border-white"
+						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-smhover:bg-neutral-200 dark:hover:bg-neutral-800 dark:border-white"
 					>
 						<FeatherIcon size={30} />
 						<span>Syllabus</span>
 					</Link>
 					<Link
 						href="/assignments"
-						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:border-white"
+						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-smhover:bg-neutral-200 dark:hover:bg-neutral-800 dark:border-white"
 					>
 						<PencilRulerIcon size={30} />
 						<span>Assignments</span>
 					</Link>
 					<Link
 						href="/schedule"
-						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:border-white"
+						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-smhover:bg-neutral-200 dark:hover:bg-neutral-800 dark:border-white"
 					>
 						<CalendarIcon size={30} />
 						<span>Schedule</span>
@@ -60,7 +60,7 @@ export default function Home() {
 					<Link
 						href="https://discord.gg/cruquDEe"
 						target="blank"
-						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:border-white"
+						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-smhover:bg-neutral-200 dark:hover:bg-neutral-800 dark:border-white"
 					>
 						<MessageCircleIcon size={30} />
 						<span>Discord</span>
