@@ -2,9 +2,9 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
 import { ThemeProvider, useTheme } from "next-themes";
-import { JetBrains_Mono } from "next/font/google";
+import { Arimo, Assistant, Chivo, JetBrains_Mono, Recursive, Reem_Kufi, Ubuntu, Varta } from "next/font/google";
 
-const font = JetBrains_Mono({ subsets: ["latin"] });
+const font = Ubuntu({ subsets: ["latin"], weight: ["300", "400", "500", "700"] });
 export default function App({ Component, pageProps }) {
 	const { theme } = useTheme();
 	return (
@@ -14,8 +14,8 @@ export default function App({ Component, pageProps }) {
 		>
 			<ThemeProvider
 				defaultTheme="light"
-        attribute="class"
-        disableTransitionOnChange
+				attribute="class"
+				disableTransitionOnChange
 			>
 				<div className="scroll-smooth">
 					<Navbar />
