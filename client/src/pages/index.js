@@ -1,3 +1,4 @@
+import { Separator } from "@/components/Separator";
 import TextLink from "@/components/TextLink";
 import { CalendarIcon, FeatherIcon, LinkIcon, MegaphoneIcon, MessageCircleIcon, PencilRulerIcon, SpeakerIcon, UsersIcon } from "lucide-react";
 import Link from "next/link";
@@ -18,7 +19,7 @@ export default function Home() {
 					</ul>
 				</section>
 			</section>
-			<hr className="w-full border-neutral-300" />
+			<Separator />
 			<section className="px-10 py-4">
 				<h2 className="flex space-x-2 text-2xl font-bold underline">
 					<MegaphoneIcon />
@@ -28,30 +29,30 @@ export default function Home() {
 					<p>We are really excited to be teaching all of you this material and communicating our passion for programming and computer science. What you learn in CS 1 may be some of the most important material you learn in your entire career, but more importantly, we hope to communicate to you why programming is fun and how you can start on your journey to becoming a great programmer. A lot has changed and is changing in this course as we incorporate new tools, material, and more interactive lectures. We value your involvement and for you to tell us what is working and what isn't. This is going to be a great term, and we are delighted to have you in the course! Before the first class, please review the course syllabus for a more detailed overview of the course and course expectations.</p>
 				</section>
 			</section>
-			<hr className="w-full border-neutral-300" />
+			<Separator />
 			<section className="px-10 py-4">
-				<h2 className="flex space-x-2 text-2xl font-bold underline">
+				<h2 className="flex mb-2 space-x-2 text-2xl font-bold underline">
 					<LinkIcon />
 					<span>Links</span>
 				</h2>
 				<div className="flex flex-col space-x-0 space-y-2 sm:space-y-0 sm:flex-row sm:space-x-2">
 					<Link
 						href="/syllabus"
-						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200"
+						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:border-white"
 					>
 						<FeatherIcon size={30} />
 						<span>Syllabus</span>
 					</Link>
 					<Link
 						href="/assignments"
-						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200"
+						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:border-white"
 					>
 						<PencilRulerIcon size={30} />
 						<span>Assignments</span>
 					</Link>
 					<Link
 						href="/schedule"
-						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200"
+						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:border-white"
 					>
 						<CalendarIcon size={30} />
 						<span>Schedule</span>
@@ -59,14 +60,14 @@ export default function Home() {
 					<Link
 						href="https://discord.gg/cruquDEe"
 						target="blank"
-						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200"
+						className="flex flex-col items-center justify-center h-20 px-8 font-bold duration-150 border-2 border-black rounded-sm bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 dark:border-white"
 					>
 						<MessageCircleIcon size={30} />
 						<span>Discord</span>
 					</Link>
 				</div>
 			</section>
-			<hr className="w-full border-neutral-300" />
+			<Separator />
 			<section className="px-10 py-4">
 				<h2 className="flex space-x-2 text-2xl font-bold underline">
 					<UsersIcon />

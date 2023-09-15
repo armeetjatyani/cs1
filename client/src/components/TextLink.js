@@ -5,7 +5,7 @@ export default function TextLink({ href, target, children }) {
 		<Link
       href={href}
       target={target}
-			className="duration-150 border-b-[3px] border-gray-500 hover:border-black active:translate-y-[2px]"
+			className="duration-150 border-b-[3px] border-neutral-400 dark:border-neutral-600 hover:border-black dark:hover:border-white active:translate-y-[2px]"
 		>
 			{children}
 		</Link>

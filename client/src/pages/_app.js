@@ -1,18 +1,27 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import "@/styles/globals.css";
-import { Vollkorn } from "next/font/google";
+import { ThemeProvider, useTheme } from "next-themes";
+import { JetBrains_Mono } from "next/font/google";
 
-const font = Vollkorn({ subsets: ["latin"] });
+const font = JetBrains_Mono({ subsets: ["latin"] });
 export default function App({ Component, pageProps }) {
+	const { theme } = useTheme();
 	return (
 		<div
 			id="app"
-			className={`${font.className} text-[16px]`}
+			className={`${font.className} text-[14px]`}
 		>
-			<Navbar />
-      <Component {...pageProps} />
-      <Footer />
+			<ThemeProvider
+				defaultTheme="light"
+				attribute="class"
+			>
+				<div className="scroll-smooth">
+					<Navbar />
+					<Component {...pageProps} />
+					<Footer />
+				</div>
+			</ThemeProvider>
 		</div>
 	);
 }

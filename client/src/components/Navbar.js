@@ -1,10 +1,11 @@
 import { CloudIcon, HomeIcon, LampIcon } from "lucide-react";
 import Link from "next/link";
 import TextLink from "./TextLink";
+import { Separator } from "./Separator";
 
 export default function Navbar() {
 	return (
-		<nav className="sticky top-0 z-50 w-full bg-white">
+		<nav className="sticky top-0 z-50 w-full bg-neutral-100 dark:bg-neutral-900">
 			<div className="flex flex-col items-center justify-center w-full px-4 py-2">
 				<Link href="/">
 					<h1
@@ -40,8 +41,8 @@ export default function Navbar() {
 						</div>
 					</TextLink>
 				</section>
-			</div>
-			<hr className="border-neutral-300" />
+      </div>
+      <Separator />
 		</nav>
 	);
 }
